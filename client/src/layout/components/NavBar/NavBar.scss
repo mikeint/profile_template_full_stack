@@ -1,0 +1,42 @@
+.topNavContainer {
+    display: flex;
+    flex-direction: column;
+    img {
+        width: 130px;
+        margin: auto;
+    }
+    .navItem {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: white;
+        padding: 15px;
+        font-size: 24px;
+ 
+        background: linear-gradient(to right, #acaeba1c 50%, #36364C 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .3s ease-out;
+        &:hover {
+            background-position: left bottom; 
+        }
+        &.active {
+            background: #acaeba3b;
+        }
+    }
+
+}
+@media only screen and (max-width: 1024px) {
+    .topNavContainer {
+        flex-direction: row; 
+        img {
+            width: 100px;
+        }
+        .navItem {
+            flex-direction: column;
+            text-align: center;
+            padding: 5px;
+            font-size: 12px;
+        }
+    }
+}
